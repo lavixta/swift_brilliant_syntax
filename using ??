@@ -1,0 +1,8 @@
+// theme is optional so the code depicts that 
+if theme has no value then set it to "". If it has a value set it to its current value 
+var theme: String? {
+		didSet {
+			emojiChoices = theme ?? ""
+			emoji = [:]
+			updateViewFromModel()
+		}
